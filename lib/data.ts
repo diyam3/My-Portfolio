@@ -129,7 +129,7 @@ export const projects: Project[] = [
     features: ["Authentication", "RAG pipeline", "Real-time AI conversations", "Knowledge retrieval", "Modern responsive UI"],
     tech: ["React", "Node", "Express", "MongoDB", "JWT", "LangChain", "Gemini API"],
     github: "https://github.com/diyam3/Student-AI-Chatbot",
-    live: "https://student-ai-chatbot-xbsf.onrender.com",
+    live: "https://student-ai-chatbot-1.onrender.com/",
   },
   {
     slug: "discover-the-college",

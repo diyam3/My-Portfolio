@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { education, extraCurricular } from "@/lib/data";
-import { GraduationCap, Heart } from "lucide-react";
+import { GraduationCap, Heart, School } from "lucide-react";
 
 export default function Education() {
   return (
@@ -12,6 +12,7 @@ export default function Education() {
         <SectionHeading eyebrow="06 · foundation" title="Education & Beyond" />
 
         <div className="grid md:grid-cols-2 gap-6">
+          {/* College + School Education */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -19,27 +20,90 @@ export default function Education() {
             transition={{ duration: 0.55 }}
             className="glass rounded-2xl shadow-glass p-7"
           >
+            {/* College */}
             <div className="w-11 h-11 rounded-xl bg-royal-600/10 text-royal-600 dark:text-royal-300 flex items-center justify-center mb-5">
               <GraduationCap size={20} />
             </div>
+
             <h3 className="font-display font-semibold text-lg text-ink dark:text-white mb-1">
               {education.institution}
             </h3>
+
             <p className="text-mist dark:text-royal-100/60 text-sm mb-4">
               {education.degree}
             </p>
-            <div className="flex gap-6">
+
+            <div className="flex gap-6 mb-6">
               <div>
-                <p className="font-mono text-[11px] text-royal-600 dark:text-royal-300 mb-0.5">CGPA</p>
-                <p className="font-display font-semibold text-ink dark:text-white">{education.cgpa}</p>
+                <p className="font-mono text-[11px] text-royal-600 dark:text-royal-300 mb-0.5">
+                  CGPA
+                </p>
+                <p className="font-display font-semibold text-ink dark:text-white">
+                  {education.cgpa}
+                </p>
               </div>
+
               <div>
-                <p className="font-mono text-[11px] text-royal-600 dark:text-royal-300 mb-0.5">Graduation</p>
-                <p className="font-display font-semibold text-ink dark:text-white">{education.graduation}</p>
+                <p className="font-mono text-[11px] text-royal-600 dark:text-royal-300 mb-0.5">
+                  Graduation
+                </p>
+                <p className="font-display font-semibold text-ink dark:text-white">
+                  {education.graduation}
+                </p>
+              </div>
+            </div>
+
+            {/* School Education */}
+            <div className="pt-5 border-t border-ink/10 dark:border-white/10">
+              <div className="flex items-center gap-2 mb-4">
+                <School
+                  size={17}
+                  className="text-royal-600 dark:text-royal-300"
+                />
+                <h4 className="font-display font-semibold text-sm text-ink dark:text-white">
+                  School Education
+                </h4>
+              </div>
+
+              <h5 className="font-display font-semibold text-sm text-ink dark:text-white mb-1">
+                St. Anthony's Jr. College
+              </h5>
+
+              {/* 12th */}
+              <div className="mt-4">
+                <div className="flex items-center justify-between">
+                  <p className="font-display font-semibold text-sm text-ink dark:text-white">
+                    Class XII
+                  </p>
+                  <p className="font-display font-semibold text-sm text-royal-600 dark:text-royal-300">
+                    93.25%
+                  </p>
+                </div>
+
+                <p className="text-mist dark:text-royal-100/60 text-xs mt-1">
+                  PCM with Computer Science · ISC · 2022
+                </p>
+              </div>
+
+              {/* 10th */}
+              <div className="mt-4">
+                <div className="flex items-center justify-between">
+                  <p className="font-display font-semibold text-sm text-ink dark:text-white">
+                    Class X
+                  </p>
+                  <p className="font-display font-semibold text-sm text-royal-600 dark:text-royal-300">
+                    95.4%
+                  </p>
+                </div>
+
+                <p className="text-mist dark:text-royal-100/60 text-xs mt-1">
+                  Computer Science · ICSE · 2020
+                </p>
               </div>
             </div>
           </motion.div>
 
+          {/* Beyond / Extra Curricular */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -50,12 +114,15 @@ export default function Education() {
             <div className="w-11 h-11 rounded-xl bg-royal-600/10 text-royal-600 dark:text-royal-300 flex items-center justify-center mb-5">
               <Heart size={19} />
             </div>
+
             <h3 className="font-display font-semibold text-lg text-ink dark:text-white mb-1">
               {extraCurricular.role}
             </h3>
+
             <p className="text-mist dark:text-royal-100/60 text-sm mb-4">
               {extraCurricular.org}
             </p>
+
             <p className="text-sm text-ink/80 dark:text-royal-100/70 leading-relaxed">
               {extraCurricular.description}
             </p>

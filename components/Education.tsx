@@ -66,7 +66,7 @@ export default function Education() {
               </div>
 
               <h5 className="font-display font-semibold text-sm text-ink dark:text-white mb-1">
-                St. Anthony's Jr. College
+                St. Anthony&apos;s Jr. College
               </h5>
 
               {/* 12th */}

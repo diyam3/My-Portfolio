@@ -46,7 +46,7 @@ export default function Contact() {
     <section id="contact" className="relative py-24 md:py-32">
       <div className="max-w-6xl mx-auto px-5 md:px-8">
         <SectionHeading
-          eyebrow="08 · connect"
+          eyebrow="07 · connect"
           title="Let's Build Something"
           description="Have a role, project, or idea in mind? I'd love to hear about it."
         />

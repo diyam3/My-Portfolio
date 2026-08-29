@@ -133,12 +133,12 @@ export const projects: Project[] = [
   },
   {
     slug: "discover-the-college",
-    title: "Discover the College",
+    title: "College Match",
     category: "Frontend Development",
     description: "Modern college discovery platform helping students explore and compare colleges through an intuitive, responsive interface.",
     features: ["College comparison", "Responsive design", "Interactive UI", "Modern layouts"],
     tech: ["React", "TypeScript", "Tailwind CSS"],
-    github: "https://github.com/diyam3/college_discovery",
+    github: "https://github.com/diyam3/discover-the-college.git",
     live: "https://discover-the-college-i9b6.vercel.app/",
   },
   {
@@ -149,6 +149,7 @@ export const projects: Project[] = [
     features: ["Mentorship", "Career Roadmaps", "Discussion Forums", "AI Chatbot", "Centralized Alumni Database"],
     tech: ["React", "Node.js", "MongoDB"],
     team: "Built in a team of six.",
+    live: "https://bucolic-piroshki-b3cb8a.netlify.app/",
   },
   {
     slug: "krishisetu",
@@ -157,6 +158,7 @@ export const projects: Project[] = [
     description: "Agriculture marketplace connecting farmers and buyers, with secure authentication and product management APIs.",
     responsibilities: ["Backend Development", "Authentication", "Product APIs", "Secure user management"],
     tech: ["Node.js", "Express.js", "MongoDB", "JWT", "Git"],
+    github: "https://github.com/anwesa-techlearner/krishisetu.git",
     live: "https://warm-fox-6ec615.netlify.app/",
   },
   {
@@ -166,7 +168,8 @@ export const projects: Project[] = [
     description: "Coupon discovery platform for finding discounts and deals through a clean, modern, responsive interface.",
     features: ["Modern responsive UI", "Coupon browsing", "Search", "Filtering"],
     tech: ["React", "JavaScript", "Tailwind CSS"],
-    live: "https://cozy-valkyrie-06c75a.netlify.app/",
+    github: "https://github.com/Namanshri/Coupon-Genie.git",
+    live: "https://6a72024a32972c51e401f862--bespoke-faloodeh-28ec2e.netlify.app/",
   },
 ];
 

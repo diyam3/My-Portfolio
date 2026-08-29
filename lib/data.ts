@@ -2,7 +2,7 @@ export const profile = {
   name: "Diya Mittal",
   status: "Final Year B.Tech Computer Science Engineering Student",
   university: "VIT Bhopal",
-  cgpa: "9.22",
+  cgpa: "9.23",
   tagline: "Turning Ideas into Intelligent Digital Experiences",
   roles: ["Software Engineer", "Full Stack Developer", "AI Enthusiast", "Data Analyst"],
   email: "reach.diyamittal@gmail.com",
@@ -18,7 +18,7 @@ export const profile = {
     "Backend Development",
     "Cloud Computing",
   ],
-  about: `I'm a final-year Computer Science student at VIT Bhopal, currently holding a 9.22 CGPA, with a habit of learning by building things that actually ship. My work sits at the intersection of full stack development, applied AI, and data — I've spent internships building procurement dashboards in React and Supabase, digging through sales and operational data to surface real business insight, and designing an AI-powered student assistant using LLMs and Retrieval-Augmented Generation. What ties it together is the same instinct every time: understand the problem properly, then build something scalable, usable, and a little more thoughtful than it needed to be. I'm most energized by projects where software, data, and AI meet — and I'm always looking for the next hard problem to learn from.`,
+  about: `I'm a final-year Computer Science student at VIT Bhopal, currently holding a 9.23 CGPA, with a habit of learning by building things that actually ship. My work sits at the intersection of full stack development, applied AI, and data — I've spent internships building procurement dashboards in React and Supabase, digging through sales and operational data to surface real business insight, and designing an AI-powered student assistant using LLMs and Retrieval-Augmented Generation. What ties it together is the same instinct every time: understand the problem properly, then build something scalable, usable, and a little more thoughtful than it needed to be. I'm most energized by projects where software, data, and AI meet — and I'm always looking for the next hard problem to learn from.`,
 };
 
 export const techStack = {
@@ -185,7 +185,7 @@ export const certifications: Certification[] = [
 export const education = {
   institution: "VIT Bhopal",
   degree: "B.Tech Computer Science Engineering",
-  cgpa: "9.22",
+  cgpa: "9.23",
   graduation: "Expected May 2027",
 };
 

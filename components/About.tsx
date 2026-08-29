@@ -39,7 +39,7 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="glass rounded-3xl shadow-glass p-8 grid grid-cols-2 gap-8"
           >
-            <AnimatedCounter value={9.22} decimals={2} label="CGPA" />
+            <AnimatedCounter value={9.23} decimals={2} label="CGPA" />
             <AnimatedCounter value={experiences.length} label="Internships" />
             <AnimatedCounter value={projects.length} label="Projects Built" />
             <AnimatedCounter value={certifications.length} label="Certifications" />

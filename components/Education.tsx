@@ -1,8 +1,12 @@
+
 "use client";
 
 import { motion } from "framer-motion";
+
 import SectionHeading from "@/components/ui/SectionHeading";
-import { education, extraCurricular } from "@/lib/data";
+
+import { extraCurricular } from "@/lib/data";
+
 import { GraduationCap, School, BookOpen } from "lucide-react";
 
 export default function Education() {
@@ -13,65 +17,65 @@ export default function Education() {
 
         {/* Education Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          
+
           {/* Undergraduate */}
-<motion.div
-  initial={{ opacity: 0, y: 24 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true, margin: "-60px" }}
-  transition={{ duration: 0.55 }}
-  className="glass rounded-2xl shadow-glass p-7 flex flex-col min-h-[360px]"
->
-  <div className="w-11 h-11 rounded-xl bg-royal-600/10 text-royal-600 dark:text-royal-300 flex items-center justify-center mb-6">
-    <GraduationCap size={20} />
-  </div>
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.55 }}
+            className="glass rounded-2xl shadow-glass p-7 flex flex-col min-h-[360px]"
+          >
+            <div className="w-11 h-11 rounded-xl bg-royal-600/10 text-royal-600 dark:text-royal-300 flex items-center justify-center mb-6">
+              <GraduationCap size={20} />
+            </div>
 
-  <h3 className="font-display font-semibold text-lg text-ink dark:text-white mb-2">
-    Undergraduate
-  </h3>
+            <h3 className="font-display font-semibold text-lg text-ink dark:text-white mb-2">
+              Undergraduate
+            </h3>
 
-  <p className="text-royal-600 dark:text-royal-300 text-sm font-medium mb-6">
-    Vellore Institute of Technology, Bhopal
-  </p>
+            <p className="text-royal-600 dark:text-royal-300 text-sm font-medium mb-6">
+              Vellore Institute of Technology, Bhopal
+            </p>
 
-  <div className="border-t border-ink/10 dark:border-white/10 pt-5 mt-auto space-y-4">
-    <div className="flex justify-between items-center">
-      <span className="text-sm text-mist dark:text-royal-100/60">
-        Degree
-      </span>
-      <span className="text-sm font-medium text-ink dark:text-white">
-        B.Tech
-      </span>
-    </div>
+            <div className="border-t border-ink/10 dark:border-white/10 pt-5 mt-auto space-y-4">
+              <div className="flex justify-between items-center">
+                <span className="text-sm text-mist dark:text-royal-100/60">
+                  Degree
+                </span>
+                <span className="text-sm font-medium text-ink dark:text-white">
+                  B.Tech
+                </span>
+              </div>
 
-    <div className="flex justify-between items-center">
-      <span className="text-sm text-mist dark:text-royal-100/60">
-        Stream
-      </span>
-      <span className="text-sm font-medium text-ink dark:text-white">
-        CSE
-      </span>
-    </div>
+              <div className="flex justify-between items-center">
+                <span className="text-sm text-mist dark:text-royal-100/60">
+                  Stream
+                </span>
+                <span className="text-sm font-medium text-ink dark:text-white">
+                  CSE
+                </span>
+              </div>
 
-    <div className="flex justify-between items-center">
-      <span className="text-sm text-mist dark:text-royal-100/60">
-        CGPA
-      </span>
-      <span className="text-sm font-semibold text-royal-600 dark:text-royal-300">
-        9.23
-      </span>
-    </div>
+              <div className="flex justify-between items-center">
+                <span className="text-sm text-mist dark:text-royal-100/60">
+                  CGPA
+                </span>
+                <span className="text-sm font-semibold text-royal-600 dark:text-royal-300">
+                  9.23
+                </span>
+              </div>
 
-    <div className="flex justify-between items-center">
-      <span className="text-sm text-mist dark:text-royal-100/60">
-        Passing Year
-      </span>
-      <span className="text-sm font-medium text-ink dark:text-white">
-        2027
-      </span>
-    </div>
-  </div>
-</motion.div>
+              <div className="flex justify-between items-center">
+                <span className="text-sm text-mist dark:text-royal-100/60">
+                  Passing Year
+                </span>
+                <span className="text-sm font-medium text-ink dark:text-white">
+                  2027
+                </span>
+              </div>
+            </div>
+          </motion.div>
 
           {/* Class XII */}
           <motion.div

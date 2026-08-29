@@ -31,7 +31,7 @@ export default function Education() {
             </div>
 
             <h3 className="font-display font-semibold text-lg text-ink dark:text-white mb-2">
-              Undergraduate
+              Graduation
             </h3>
 
             <p className="text-royal-600 dark:text-royal-300 text-sm font-medium mb-6">

@@ -10,7 +10,6 @@ Live sections: Hero · About · Skills · Experience Timeline · Projects (with 
 - Animated hero with typewriter role rotation, floating/orbiting tech icons, cursor glow
 - Scroll-reveal animations, animated stat counters, magnetic hover states throughout (Framer Motion)
 - Filterable project grid with an animated detail popup per project
-- Live GitHub stats, streak, and contribution graph (via `github-readme-stats`)
 - Visitor badge, back-to-top button, downloadable resume button
 - Fully responsive (mobile, tablet, desktop), keyboard-accessible, respects `prefers-reduced-motion`
 - SEO-ready: metadata, Open Graph, `sitemap.xml`, `robots.txt`, generated favicon

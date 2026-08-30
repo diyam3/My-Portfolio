@@ -6,6 +6,7 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import { Pill } from "@/components/ui/Card";
 import { projects, type Project } from "@/lib/data";
 import { Github, ExternalLink, X, Users } from "lucide-react";
+import Image from "next/image";
 
 export default function Projects() {
   const categories = useMemo(
@@ -57,19 +58,33 @@ export default function Projects() {
                 onClick={() => setSelected(project)}
                 className="group text-left glass rounded-2xl shadow-glass hover:shadow-glass-lg transition-shadow overflow-hidden"
               >
-                <div className="relative h-40 bg-gradient-to-br from-royal-500/15 via-royal-400/10 to-navy-900/10 dark:from-royal-500/20 dark:via-royal-400/10 dark:to-navy-900/20 flex items-center justify-center overflow-hidden">
-                  <span className="font-display text-3xl font-semibold text-royal-600/30 dark:text-royal-300/25 group-hover:scale-110 transition-transform duration-500">
-                    {project.title
-                      .split(" ")
-                      .map((w) => w[0])
-                      .join("")
-                      .slice(0, 3)}
-                  </span>
-                  <div className="absolute inset-0 bg-gradient-to-t from-white/40 dark:from-navy-900/40 to-transparent" />
-                  <span className="absolute top-3 left-3 font-mono text-[10px] rounded-full bg-white/80 dark:bg-navy-900/80 text-royal-700 dark:text-royal-300 px-2.5 py-1">
-                    {project.category}
-                  </span>
-                </div>
+                <div className="relative h-48 overflow-hidden bg-navy-900/5 dark:bg-white/5">
+  {project.image ? (
+    <Image
+      src={project.image}
+      alt={`${project.title} preview`}
+      fill
+      className="object-cover transition-transform duration-500 group-hover:scale-105"
+      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+    />
+  ) : (
+    <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-royal-500/15 via-royal-400/10 to-navy-900/10 dark:from-royal-500/20 dark:via-royal-400/10 dark:to-navy-900/20">
+      <span className="font-display text-3xl font-semibold text-royal-600/30 dark:text-royal-300/25">
+        {project.title
+          .split(" ")
+          .map((w) => w[0])
+          .join("")
+          .slice(0, 3)}
+      </span>
+    </div>
+  )}
+
+  <div className="absolute inset-0 bg-gradient-to-t from-navy-900/50 via-transparent to-transparent pointer-events-none" />
+
+  <span className="absolute top-3 left-3 font-mono text-[10px] rounded-full bg-white/80 dark:bg-navy-900/80 text-royal-700 dark:text-royal-300 px-2.5 py-1">
+    {project.category}
+  </span>
+</div>
                 <div className="p-5">
                   <h3 className="font-display font-semibold text-ink dark:text-white mb-1.5 flex items-center justify-between">
                     {project.title}

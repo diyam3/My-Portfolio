@@ -117,6 +117,7 @@ export type Project = {
   github?: string;
   live?: string;
   team?: string;
+  image?: string;
 };
 
 export const projects: Project[] = [
@@ -130,6 +131,7 @@ export const projects: Project[] = [
     tech: ["React", "Node", "Express", "MongoDB", "JWT", "LangChain", "Gemini API"],
     github: "https://github.com/diyam3/Student-AI-Chatbot",
     live: "https://student-ai-chatbot-1.onrender.com/",
+    image: "/projects/campus-copilot.png",
   },
   {
     slug: "discover-the-college",
@@ -140,6 +142,7 @@ export const projects: Project[] = [
     tech: ["React", "TypeScript", "Tailwind CSS"],
     github: "https://github.com/diyam3/discover-the-college.git",
     live: "https://discover-the-college-i9b6.vercel.app/",
+    image: "/projects/college-match.png",
   },
   {
     slug: "healthcare-appointment-system",
@@ -150,6 +153,7 @@ export const projects: Project[] = [
     tech: ["React", "Node.js", "Express.js", "MongoDB"],
     github: "https://github.com/diyam3/Healthcare-Appointment-Assignment.git",
     live: "https://healthcare-appointment-assignment.vercel.app/",
+    image: "/projects/healthcare-app.png",
   },
   {
     slug: "gradlink",
@@ -160,6 +164,7 @@ export const projects: Project[] = [
     tech: ["React", "Node.js", "MongoDB"],
     team: "Built in a team of six.",
     live: "https://bucolic-piroshki-b3cb8a.netlify.app/",
+    image: "/projects/gradlink.png",
   },
   {
     slug: "krishisetu",
@@ -170,6 +175,7 @@ export const projects: Project[] = [
     tech: ["Node.js", "Express.js", "MongoDB", "JWT", "Git"],
     github: "https://github.com/anwesa-techlearner/krishisetu.git",
     live: "https://warm-fox-6ec615.netlify.app/",
+    image: "/projects/krishisetu.png",
   },
   {
     slug: "coupon-genie",
@@ -180,6 +186,7 @@ export const projects: Project[] = [
     tech: ["React", "JavaScript", "Tailwind CSS"],
     github: "https://github.com/Namanshri/Coupon-Genie.git",
     live: "https://6a72024a32972c51e401f862--bespoke-faloodeh-28ec2e.netlify.app/",
+    image: "/projects/coupon-genie.png",
   },
 ];
 

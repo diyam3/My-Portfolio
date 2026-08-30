@@ -142,6 +142,16 @@ export const projects: Project[] = [
     live: "https://discover-the-college-i9b6.vercel.app/",
   },
   {
+    slug: "healthcare-appointment-system",
+    title: "Health Care",
+    category: "Full Stack Development",
+    description: "A comprehensive healthcare appointment system allowing patients to book, manage, and reschedule appointments with healthcare providers.",
+    features: ["Appointment booking", "Patient management", "Provider scheduling", "Reminders and notifications"],
+    tech: ["React", "Node.js", "Express.js", "MongoDB"],
+    github: "https://github.com/diyam3/Healthcare-Appointment-Assignment.git",
+    live: "https://healthcare-appointment-assignment.vercel.app/",
+  },
+  {
     slug: "gradlink",
     title: "GradLink",
     category: "Full Stack / Education",

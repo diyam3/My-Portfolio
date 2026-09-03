@@ -2,7 +2,7 @@
 
 A premium, animated, production-ready developer portfolio built with **Next.js 15 (App Router)**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**.
 
-Live sections: Hero · About · Skills · Experience Timeline · Projects (with filtering + detail modal) · Certifications · Education · GitHub Stats · Contact · Footer.
+Live sections: Hero · About · Skills · Experience Timeline · Projects (with filtering + detail modal) · Certifications · Education · Contact · Footer.
 
 ## ✨ Features
 
@@ -77,9 +77,4 @@ vercel --prod
 
 | Variable | Description | Required |
 |---|---|---|
-| `NEXT_PUBLIC_GITHUB_USERNAME` | GitHub username for live stats/contribution graph | No (defaults to `diyam3`) |
 | `NEXT_PUBLIC_FORM_ENDPOINT` | POST endpoint (e.g. Formspree) for the contact form | No (falls back to a `mailto:` link) |
-
-## 📝 License
-
-Personal portfolio — free to use as a reference for your own portfolio structure.
